@@ -1,4 +1,16 @@
 $(function() {
+  $("#loginButton").click(function() {
+    $("#loginModal").modal('show');
+  })
+  $("#reserveButton").click(function() {
+    $("#reserveFormModal").modal('show');
+  })
+})
+
+
+
+
+$(function() {
   $(".carousel").carousel( { interval: 2000 });
   $("#carouselButton").click(function(){
     if ($("#carouselButton").children("i").hasClass("fa-pause")){
